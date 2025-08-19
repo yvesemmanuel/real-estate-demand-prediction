@@ -1,0 +1,18 @@
+[project]
+name = "real-estate-demand-prediction"
+version = "0.1.0"
+requires-python = ">=3.10"
+dependencies = [
+    "pandas",
+    "numpy",
+    "seaborn",
+    "matplotlib",
+    "statsmodels",
+    "scikit-learn>=1.7.1",
+    "pytabkit>=1.6.0",
+]
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["*.py"]
+exclude = ["data*", "results*", "eda_plots*"]
